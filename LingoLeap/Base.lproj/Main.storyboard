@@ -1,25 +1,65 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BV1-FR-VrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BV1-FR-VrT">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Game View Controller-->
+        <!--ViewController-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="ViewController" id="BV1-FR-VrT" customClass="ViewController" customModule="LingoLeap" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Cei-gA-s71"/>
-                        <viewControllerLayoutGuide type="bottom" id="O1X-57-Ctf"/>
+                        <viewControllerLayoutGuide type="top" id="HUW-s7-fQ7"/>
+                        <viewControllerLayoutGuide type="bottom" id="jUD-Ps-VYs"/>
                     </layoutGuides>
-                    <sceneKitView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx">
+                    <view key="view" contentMode="scaleToFill" id="t2J-IQ-1wv">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </sceneKitView>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p6a-a2-3Kk">
+                                <rect key="frame" x="277" y="194" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="pressButton:" destination="BV1-FR-VrT" eventType="touchUpInside" id="nVD-1M-Lfk"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EGJ-ts-8B3">
+                                <rect key="frame" x="236" y="232" width="129" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="129" id="X41-o9-OvC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="74t-NS-jYJ">
+                                <rect key="frame" x="236" y="261" width="129" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="74t-NS-jYJ" firstAttribute="top" secondItem="EGJ-ts-8B3" secondAttribute="bottom" constant="8" symbolic="YES" id="EPJ-aU-UY9"/>
+                            <constraint firstItem="EGJ-ts-8B3" firstAttribute="trailing" secondItem="74t-NS-jYJ" secondAttribute="trailing" id="L2d-nN-yAV"/>
+                            <constraint firstItem="EGJ-ts-8B3" firstAttribute="top" secondItem="p6a-a2-3Kk" secondAttribute="bottom" constant="8" id="XdQ-Bj-pOI"/>
+                            <constraint firstItem="p6a-a2-3Kk" firstAttribute="top" secondItem="HUW-s7-fQ7" secondAttribute="bottom" constant="174" id="fH5-Ne-9rC"/>
+                            <constraint firstItem="p6a-a2-3Kk" firstAttribute="centerX" secondItem="EGJ-ts-8B3" secondAttribute="centerX" id="kQS-va-s7K"/>
+                            <constraint firstItem="p6a-a2-3Kk" firstAttribute="centerX" secondItem="t2J-IQ-1wv" secondAttribute="centerX" id="oKF-Ls-5wx"/>
+                            <constraint firstItem="EGJ-ts-8B3" firstAttribute="leading" secondItem="74t-NS-jYJ" secondAttribute="leading" id="w9R-Gx-WIk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="p6a-a2-3Kk" id="xmn-zA-c9K"/>
+                        <outlet property="label" destination="EGJ-ts-8B3" id="2jq-9k-G6m"/>
+                        <outlet property="label2" destination="74t-NS-jYJ" id="zLs-On-YQS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="161" y="339"/>
         </scene>
     </scenes>
 </document>

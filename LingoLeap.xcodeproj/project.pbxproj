@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		360487A61DC951CC000960E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360487A51DC951CC000960E4 /* AppDelegate.swift */; };
 		360487A81DC951CC000960E4 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 360487A71DC951CC000960E4 /* art.scnassets */; };
-		360487AA1DC951CC000960E4 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360487A91DC951CC000960E4 /* GameViewController.swift */; };
+		360487AA1DC951CC000960E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360487A91DC951CC000960E4 /* ViewController.swift */; };
 		360487AD1DC951CC000960E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 360487AB1DC951CC000960E4 /* Main.storyboard */; };
 		360487AF1DC951CC000960E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 360487AE1DC951CC000960E4 /* Assets.xcassets */; };
 		360487B21DC951CC000960E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 360487B01DC951CC000960E4 /* LaunchScreen.storyboard */; };
 		360487BD1DC951CC000960E4 /* LingoLeapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360487BC1DC951CC000960E4 /* LingoLeapTests.swift */; };
 		360487C81DC951CC000960E4 /* LingoLeapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360487C71DC951CC000960E4 /* LingoLeapUITests.swift */; };
+		36BE9E6C1DD7D55E003C2C25 /* span-eng.JSON in Resources */ = {isa = PBXBuildFile; fileRef = 36BE9E6B1DD7D55E003C2C25 /* span-eng.JSON */; };
+		36BE9E6E1DD7D662003C2C25 /* span_eng.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BE9E6D1DD7D662003C2C25 /* span_eng.swift */; };
+		36BE9E701DD7D696003C2C25 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BE9E6F1DD7D696003C2C25 /* extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +41,7 @@
 		360487A21DC951CC000960E4 /* LingoLeap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LingoLeap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		360487A51DC951CC000960E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		360487A71DC951CC000960E4 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		360487A91DC951CC000960E4 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		360487A91DC951CC000960E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		360487AC1DC951CC000960E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		360487AE1DC951CC000960E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		360487B11DC951CC000960E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +52,9 @@
 		360487C31DC951CC000960E4 /* LingoLeapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LingoLeapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		360487C71DC951CC000960E4 /* LingoLeapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LingoLeapUITests.swift; sourceTree = "<group>"; };
 		360487C91DC951CC000960E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36BE9E6B1DD7D55E003C2C25 /* span-eng.JSON */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "span-eng.JSON"; sourceTree = "<group>"; };
+		36BE9E6D1DD7D662003C2C25 /* span_eng.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = span_eng.swift; sourceTree = "<group>"; };
+		36BE9E6F1DD7D696003C2C25 /* extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +107,11 @@
 			children = (
 				360487A51DC951CC000960E4 /* AppDelegate.swift */,
 				360487A71DC951CC000960E4 /* art.scnassets */,
-				360487A91DC951CC000960E4 /* GameViewController.swift */,
+				360487A91DC951CC000960E4 /* ViewController.swift */,
+				36BE9E6D1DD7D662003C2C25 /* span_eng.swift */,
+				36BE9E6B1DD7D55E003C2C25 /* span-eng.JSON */,
 				360487AB1DC951CC000960E4 /* Main.storyboard */,
+				36BE9E6F1DD7D696003C2C25 /* extensions.swift */,
 				360487AE1DC951CC000960E4 /* Assets.xcassets */,
 				360487B01DC951CC000960E4 /* LaunchScreen.storyboard */,
 				360487B31DC951CC000960E4 /* Info.plist */,
@@ -234,6 +243,7 @@
 			files = (
 				360487A81DC951CC000960E4 /* art.scnassets in Resources */,
 				360487B21DC951CC000960E4 /* LaunchScreen.storyboard in Resources */,
+				36BE9E6C1DD7D55E003C2C25 /* span-eng.JSON in Resources */,
 				360487AF1DC951CC000960E4 /* Assets.xcassets in Resources */,
 				360487AD1DC951CC000960E4 /* Main.storyboard in Resources */,
 			);
@@ -260,8 +270,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				360487AA1DC951CC000960E4 /* GameViewController.swift in Sources */,
+				36BE9E6E1DD7D662003C2C25 /* span_eng.swift in Sources */,
+				360487AA1DC951CC000960E4 /* ViewController.swift in Sources */,
 				360487A61DC951CC000960E4 /* AppDelegate.swift in Sources */,
+				36BE9E701DD7D696003C2C25 /* extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,6 +502,7 @@
 				360487CE1DC951CC000960E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		360487CF1DC951CC000960E4 /* Build configuration list for PBXNativeTarget "LingoLeapTests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +511,7 @@
 				360487D11DC951CC000960E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		360487D21DC951CC000960E4 /* Build configuration list for PBXNativeTarget "LingoLeapUITests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +520,7 @@
 				360487D41DC951CC000960E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
